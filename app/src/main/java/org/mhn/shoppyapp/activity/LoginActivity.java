@@ -3,8 +3,8 @@ package org.mhn.shoppyapp.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,7 +13,7 @@ import org.mhn.shoppyapp.R;
 
 public class LoginActivity extends AppCompatActivity {
 
-    Button login;
+    ImageView login;
     EditText username, password;
 
     protected void onCreate(Bundle saveInstanceState) {
@@ -22,7 +22,7 @@ public class LoginActivity extends AppCompatActivity {
 
         setContentView(R.layout.login_relative);
 
-        login = (Button) findViewById(R.id.btnLogin);
+        login = (ImageView) findViewById(R.id.btnLogin);
         username = (EditText) findViewById(R.id.etUsername);
         password = (EditText) findViewById(R.id.etPassword);
 
